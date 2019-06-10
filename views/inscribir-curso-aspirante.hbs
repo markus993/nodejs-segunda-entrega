@@ -1,0 +1,15 @@
+{{>header}}
+    <h2>Formulario de inscripcion de cursos</h2>
+    <form action="/aspirante/operaciones/inscribir-curso" method="post">
+        <label for="id">Documento Id.</label>
+        <input type="text" name="id" id="id" required><br>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" name="nombre" id="nombre" required><br>
+        <label for="email">Correo Electronico</label>
+        <input type="email" name="email" id="email" required><br>
+        <label for="telefono">Telefono</label>
+        <input type="number" name="telefono" id="telefono" required><br>
+        <input type="hidden" name="idCurso" value="{{id}}">
+        <button type="submit">Inscribir</button>
+    </form>
+{{>footer}}

@@ -1,0 +1,11 @@
+.bordeRojo {
+    border-color: red;
+}
+
+.colorRojo {
+    color: red;
+}
+
+label {
+    width: 100px;
+}

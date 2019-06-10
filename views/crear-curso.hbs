@@ -1,0 +1,23 @@
+{{>header}}
+    <h2>Formulario de creacion de cursos</h2>
+    <form action="/coordinador/operaciones/crear" method="post">
+        <label for="id">Identificador</label>
+        <input type="text" name="id" id="id" required><br>
+        <label for="nombre">Nombre curso</label>
+        <input type="text" name="nombre" id="nombre" required><br>
+        <label for="descripcion">Descripcion</label>
+        <input type="text" name="descripcion" id="descripcion" required><br>
+        <label for="valor">Valor</label>
+        <input type="number" name="valor" id="valor" required><br>
+        <label for="modalidad">Modalidad</label>
+        <select name="modalidad" id="modalidad">
+            <option value="">Selecciona...</option>
+            <option value="Virtual">Virtual</option>
+            <option value="Presencial">Presencial</option>
+        </select><br>
+        <label for="intensidad">Intensidad</label>
+        <input type="number" name="intensidad" id="intensidad"><br>
+        <input type="hidden" name="estado" value="disponible">
+        <button type="submit">Crear</button>
+    </form>
+{{>footer}}
